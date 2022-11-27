@@ -19,7 +19,7 @@ public class Main {
         a++;
         System.out.print(" " + a);
         }
-        System.out.println("");
+        System.out.println(" ");
         int b = 10;
         for (; b > 0; b--) {
         System.out.print(" " + b);
