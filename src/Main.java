@@ -1,7 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
         //Задача 1
         System.out.println("Домашнее задание 1.Задание 1");
         int input = 15000;
@@ -20,8 +18,7 @@ public class Main {
             System.out.print(" " + a);
         }
         System.out.println(" ");
-        int b = 10;
-        for (; b > 0; b--) {
+        for (int b = 10; b > 0; b--) {
             System.out.print(" " + b);
         }
         System.out.println(" ");
@@ -66,10 +63,21 @@ public class Main {
             }
         }
         //Задача 7
-        System.out.println("Домашнее задание 2.Задание 4");
+        System.out.println("Домашнее задание 3.Задание 1");
         for (int friday = 1; friday <= 31; friday = friday + 7) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
-
+        int startCount = 1822, finishCount = 2122;
+        for (int comet = 0; comet < finishCount; comet = comet + 79){
+            if (comet > startCount) {
+                System.out.println(comet);
+            }
+        }
+        //Задача 8
+        System.out.println("Домашнее задание 3.Задание 2");
+        int x = 2;
+        for (int y = 1; y <= 10; y++) {
+            System.out.println(x +"*"+ y+ "="+ x * y);
+        }
     }
 }
