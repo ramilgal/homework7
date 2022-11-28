@@ -35,5 +35,26 @@ public class Main {
             totalPopulation = totalPopulation + increase;
             System.out.println("Год " + period + " численность населения составляет " + totalPopulation + " человек");
         }
+        //Задача 4
+        System.out.println("Домашнее задание 2.Задание 1");
+        int totalDeposit = 15000;
+        int month = 0;
+        while (totalDeposit <= 12_000_000) {
+            month++;
+            totalDeposit = (int) (totalDeposit + totalDeposit * 0.07);
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalDeposit + " рублей");
+        }
+        //Задача 5
+        System.out.println("Домашнее задание 2.Задание 2");
+        int totalDeposit1 = 15_000;
+        int month1 = 0;
+        while (totalDeposit1 <= 12_000_000) {
+            month1++;
+            totalDeposit1 = (int) (totalDeposit1 + totalDeposit1 * 0.07);
+            if (month1 % 6 == 0) {
+            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + totalDeposit1 + " рублей");
+            }
+        }
+
     }
 }
