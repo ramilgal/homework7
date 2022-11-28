@@ -16,13 +16,13 @@ public class Main {
         System.out.println("Домашнее задание 1.Задание 2");
         int a = 0;
         while (a < 10) {
-        a++;
-        System.out.print(" " + a);
+            a++;
+            System.out.print(" " + a);
         }
         System.out.println(" ");
         int b = 10;
         for (; b > 0; b--) {
-        System.out.print(" " + b);
+            System.out.print(" " + b);
         }
         System.out.println(" ");
         //Задача 3
@@ -52,8 +52,23 @@ public class Main {
             month1++;
             totalDeposit1 = (int) (totalDeposit1 + totalDeposit1 * 0.07);
             if (month1 % 6 == 0) {
-            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + totalDeposit1 + " рублей");
+                System.out.println("Месяц " + month1 + ", сумма накоплений равна " + totalDeposit1 + " рублей");
             }
+        }
+        //Задача 6
+        System.out.println("Домашнее задание 2.Задание 3");
+        int totalDeposit2 = 15000;
+        int periodYears = 9;
+        for (int periodMonths = 1; periodMonths <= periodYears * 12; periodMonths++) {
+            totalDeposit2 = (int) (totalDeposit2 + totalDeposit2 * 0.07);
+            if (periodMonths % 6 == 0) {
+                System.out.println("Месяц " + periodMonths + ", сумма накоплений равна " + totalDeposit2 + " рублей");
+            }
+        }
+        //Задача 7
+        System.out.println("Домашнее задание 2.Задание 4");
+        for (int friday = 1; friday <= 31; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
 
     }
